@@ -1,0 +1,4 @@
+1. SELECT * FROM `theloai` as tl JOIN `baiviet` as bv
+WHERE tl.ma_tloai = bv.ma_tloai and tl.ten_tloai like 'Nhạc trữ tình'
+2. SELECT * FROM `tacgia` as tg JOIN `baiviet` as bv 
+WHERE tg.ma_tgia = bv.ma_tgia AND tg.ten_tgia LIKE 'Nhacvietplus'
