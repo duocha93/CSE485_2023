@@ -65,7 +65,7 @@
             </div>
     </header>
     <main class="container-fluid mt-3">
-        <h3 class="text-center text-uppercase mb-3 text-primary">TOP bài hát yêu thích</h3>
+        <h3 class="text-center text-uppercase mb-3 "><strong> TOP BÀI HÁT YÊU THÍCH </strong></h3>
         <div class="row">
             <div class="col-sm-3">
                 <div class="card mb-2" style="width: 100%;">
