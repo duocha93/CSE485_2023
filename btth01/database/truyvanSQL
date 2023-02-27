@@ -2,4 +2,27 @@
 WHERE tl.ma_tloai = bv.ma_tloai and tl.ten_tloai like 'Nhạc trữ tình'
 2. SELECT * FROM `tacgia` as tg JOIN `baiviet` as bv 
 WHERE tg.ma_tgia = bv.ma_tgia AND tg.ten_tgia LIKE 'Nhacvietplus'
-3.
+3.select theloai.* from theloai
+where theloai.ma_tloai not in (
+    select baiviet.ma_tloai
+    from baiviet);
+4.select baiviet.ma_bviet, baiviet.tieude, baiviet.ten_bhat, tacgia.ten_tgia, theloai.ten_tloai, baiviet.ngayviet from baiviet, theloai, tacgia
+where baiviet.ma_tgia = tacgia.ma_tgia and baiviet.ma_tloai = theloai.ma_tloai;
+
+5.select baiviet.* from baiviet
+where baiviet.ten_bhat like "% yeu"
+or baiviet.ten_bhat like "% thuong"
+or baiviet.ten_bhat like "% anh" 
+or baiviet.ten_bhat like "% em";
+
+
+6.select baiviet.* from baiviet
+where (baiviet.ten_bhat like "% yeu"
+or baiviet.ten_bhat like "% thuong"
+or baiviet.ten_bhat like "% anh" 
+or baiviet.ten_bhat like "% em") OR
+(baiviet.tieude like "% yeu"
+or baiviet.tieude like "% thuong"
+or baiviet.tieude like "% anh"
+or baiviet.tieude like "% em"
+);
