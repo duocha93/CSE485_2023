@@ -3,7 +3,9 @@
 body{
   background-image: url('https://pdp.edu.vn/wp-content/uploads/2021/05/hinh-nen-mau-xam.jpg'); 
   background-size: cover;
+  background-repeat: no-repeat;
   height: 100%; 
+  
 }
 
 .card{
