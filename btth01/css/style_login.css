@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Numans');
 
-body{
+html,body{
   background-image: url('/btth01/images/1.jpg'); 
   background-size: cover;
+  background-repeat: no-repeat;
   height: 100%; 
+  
 }
 
 .card{
