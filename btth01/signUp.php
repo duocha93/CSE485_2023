@@ -59,14 +59,11 @@
 				<td>Email :</td>
 				<td><input type="text" id="email" name="email"></td>
 			</tr>
-			<tr>
-				 <div class="form-group">
-                        <input type="submit" value="Signup" class="btn float-end signsp_btn">
-                 </div>
-			</tr>
-
 		</table>
-		
+		<div class="form-group">
+            <input type="submit" value="Sign Up" class="btn float-end signup_btn">
+        </div>
+			
 	</form>
 </div>
 </div>

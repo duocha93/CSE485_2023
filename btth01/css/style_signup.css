@@ -12,6 +12,7 @@ margin-top: auto;
 margin-bottom: auto;
 width: 400px;
 background-color: rgba(58, 59, 60, 0.5) !important;
+color:aliceblue;
 }
 .card-body{
 padding-top: 100px;
@@ -34,13 +35,27 @@ position: absolute;
 right: 20px;
 top: -45px;
 }
-.Signup_btn{
+.form-group{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 50px;
+}
+.signup_btn{
 color: black;
 background-color: #FFC312;
 width: 100px;
 }
 
-.Signup_btn:hover{
+.signup_btn:hover{
 color: black;
 background-color: white;
+}
+.links{
+color: white;
+}
+
+.links a{
+margin-left: 4px;
+text-decoration:none;
 }
