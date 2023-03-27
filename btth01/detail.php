@@ -1,3 +1,17 @@
+<?php
+require './addData.php';
+$ma_bviet = $_GET['ma_bviet'];
+$conn = addData();
+
+$query = "SELECT * FROM `baiviet` as bv JOIN `theloai` as tl JOIN `tacgia` as tg 
+            WHERE ma_bviet = '$ma_bviet' AND bv.ma_tloai = tl.ma_tloai AND tg.ma_tgia = bv.ma_tgia;";
+$result = mysqli_query($conn, $query);
+$data = mysqli_fetch_assoc($result);
+
+$conn->close();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,25 +52,43 @@
         </nav>
 
     </header>
-    <main class="container mt-5">
+    <main class="container mt-5" style="font-family: Times New RomanTimes;">
         <!-- <h3 class="text-center text-uppercase mb-3 text-primary">CẢM NHẬN VỀ BÀI HÁT</h3> -->
-       
-                <div class="row mb-5">
-                    <div class="col-sm-4">
-                        <img src="images/songs/cayvagio.jpg" class="img-fluid" alt="...">
-                    </div>
-                    <div class="col-sm-8">
-                        <h5 class="card-title mb-2">
-                            <a href="" class="text-decoration-none">Cây và gió</a>
-                        </h5>
-                        <p class="card-text"><span class=" fw-bold">Bài hát: </span>Cây và gió</p>
-                        <p class="card-text"><span class=" fw-bold">Thể loại: </span>Nhạc trữ tình</p>
-                        <p class="card-text"><span class=" fw-bold">Tóm tắt: </span>Em và anh, hai đứa quen nhau thật tình cờ. Lời hát của anh từ bài hát “Cây và gió” đã làm tâm hồn em xao động. Nhưng sự thật phũ phàng rằng em chưa bao giờ nói cho anh biết những suy nghĩ tận sâu trong tim mình. Bởi vì em nhút nhát, em không dám đối mặt với thực tế khắc nghiệt, hay thực ra em không dám đối diện với chính mình.</p>
-                        <p class="card-text"><span class=" fw-bold">Nội dung: </span>Em và anh, hai đứa quen nhau thật tình cờ. Lời hát của anh từ bài hát “Cây và gió” đã làm tâm hồn em xao động. Nhưng sự thật phũ phàng rằng em chưa bao giờ nói cho anh biết những suy nghĩ tận sâu trong tim mình. Bởi vì em nhút nhát, em không dám đối mặt với thực tế khắc nghiệt, hay thực ra em không dám đối diện với chính mình.</p>
-                        <p class="card-text"><span class=" fw-bold">Tác giả: </span>Nguyễn Văn Giả</p>
+        <div class="row mb-5">
+            <div class="col-sm-4">
+                <img src=<?= $data['hinhanh'] ?? "./images/image/images/cayvagio.jpg" ?> class="img-fluid" alt="hình ảnh minh họa">
+            </div>
+            <div class="col-sm-8">
+                <h5 class="card-title mb-2">
+                    <a href="" class="text-decoration-none">
+                        <?= $data['tieude']  ?>
+                    </a>
+                </h5>
+                <p class="card-text">
+                    <span class=" fw-bold">Bài hát: </span>
+                    <?= ($data['ten_bhat'])   ?>
+                </p>
+                <p class="card-text">
+                    <span class=" fw-bold">Thể loại: </span>
+                    <?= ($data['ten_tloai'])   ?>
+                </p>
+                <p class="card-text">
+                    <span class=" fw-bold">Tóm tắt: </span>
+                    <?= ($data['tomtat'])   ?>
+                </p>
+                <p class="card-text">
+                    <span class=" fw-bold">Nội dung: </span>
+                    <?= ($data['noidung']) ?? $data['tomtat']  ?>
+                </p>
+                <p class="card-text">
+                    <span class=" fw-bold">Tác giả: </span>
+                    <?= ($data['ten_tgia'])   ?>
+                </p>
 
-                    </div>          
+            </div>
         </div>
+               
+        
     </main>
     <footer class="bg-white d-flex justify-content-center align-items-center border-top border-secondary  border-2" style="height:80px">
         <h4 class="text-center text-uppercase fw-bold">TLU's music garden</h4>

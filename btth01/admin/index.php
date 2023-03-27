@@ -53,7 +53,7 @@
                         </h5>
 
                         <h5 class="h1 text-center">
-                            110
+                            1100
                         </h5>
                     </div>
                 </div>
@@ -63,11 +63,11 @@
                 <div class="card mb-2" style="width: 100%;">
                     <div class="card-body">
                         <h5 class="card-title text-center">
-                            <a href="" class="text-decoration-none">Thể loại</a>
+                            <a href="./category.php" class="text-decoration-none">Thể loại</a>
                         </h5>
 
                         <h5 class="h1 text-center">
-                            10
+                            9
                         </h5>
                     </div>
                 </div>
@@ -77,25 +77,25 @@
                 <div class="card mb-2" style="width: 100%;">
                     <div class="card-body">
                         <h5 class="card-title text-center">
-                            <a href="" class="text-decoration-none">Tác giả</a>
+                            <a href="./author.php" class="text-decoration-none">Tác giả</a>
+                        </h5>
+
+                        <h5 class="h1 text-center">
+                            8
+                        </h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="card mb-2" style="width: 100%;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">
+                            <a href="./article.php" class="text-decoration-none">Bài viết</a>
                         </h5>
 
                         <h5 class="h1 text-center">
                             20
-                        </h5>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-3">
-                <div class="card mb-2" style="width: 100%;">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">
-                            <a href="" class="text-decoration-none">Bài viết</a>
-                        </h5>
-
-                        <h5 class="h1 text-center">
-                            110
                         </h5>
                     </div>
                 </div>

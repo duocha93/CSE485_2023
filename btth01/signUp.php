@@ -56,14 +56,15 @@
 				<td><input type="text" id="name" name="name"></td>
 			</tr>
 			<tr>
-				<td>Email :</td>
+				<td>Email : :</td>
 				<td><input type="text" id="email" name="email"></td>
 			</tr>
 		</table>
+		
 		<div class="form-group">
-            <input type="submit" value="Sign Up" class="btn float-end signup_btn">
+			 <a href="login.php" class="btn float-end signup_btn ">Sign Up</a>
         </div>
-			
+		
 	</form>
 </div>
 </div>

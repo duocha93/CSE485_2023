@@ -5,9 +5,12 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%; 
-  
+  font-family: 'Numans', sans-serif !important;
 }
-
+.container{
+height: 100%;
+align-content: center;
+}
 .card{
 height: 370px;
 margin-top: auto;
@@ -19,6 +22,7 @@ color:aliceblue;
 .card-body{
 padding-top: 100px;
 }
+
 .social_icon span{
 font-size: 60px;
 margin-left: 10px;
